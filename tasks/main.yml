@@ -16,18 +16,18 @@
   tags:
     - freeradius
 
-- name: Create radiusd configuration file
-  become: yes
-  template:
-    src: radiusd.conf.j2
-    dest: /etc/freeradius/radiusd.conf
-    owner: root
-    group: freerad
-    mode: 0640
-  notify:
-    - reload freeradius
-  tags:
-    - freeradius
+#- name: Create radiusd configuration file
+#  become: yes
+#  template:
+#    src: radiusd.conf.j2
+#    dest: /etc/freeradius/radiusd.conf
+#    owner: root
+#    group: freerad
+#    mode: 0640
+#  notify:
+#    - reload freeradius
+#  tags:
+#    - freeradius
 
 - name: Ensure FreeRADIUS service is started and enabled on boot
   become: yes
