@@ -12,7 +12,7 @@
     - freeradius
 
 - include: Ubuntu.yml
-  when: ansible_os_family == "Ubuntu"
+  when: ansible_os_family == "Debian"
   tags:
     - freeradius
 
