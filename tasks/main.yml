@@ -2,17 +2,17 @@
 # tasks file for freeradius
 
 - name: Include distribution specific variables
-  include_vars: "{{ ansible_distribution }}.yml"
+  include_vars: "{{ ansible_os_family }}.yml"
   tags:
     - freeradius
 
-- include: CentOS.yml
-  when: ansible_distribution == "CentOS"
+- include: RedHat.yml
+  when: ansible_os_family == "RedHat"
   tags:
     - freeradius
 
 - include: Ubuntu.yml
-  when: ansible_distribution == "Ubuntu"
+  when: ansible_os_family == "Ubuntu"
   tags:
     - freeradius
 

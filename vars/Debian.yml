@@ -1,5 +1,5 @@
 ---
-# vars file for freeradius (Ubuntu specific)
+# vars file for freeradius (Debian specific)
 
 freeradius_packages:
   - freeradius

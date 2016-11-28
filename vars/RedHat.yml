@@ -1,5 +1,5 @@
 ---
-# vars file for freeradius (CentOS specific)
+# vars file for freeradius (RedHat specific)
 
 freeradius_packages:
   - freeradius
