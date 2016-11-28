@@ -1,7 +1,7 @@
 ---
-# tasks file for freeradius (Ubuntu specifc)
+# tasks file for freeradius (Debian specifc)
 
-- name: Install FreeRADIUS packages
+- name: Install FreeRADIUS packages (Debian)
   become: yes
   apt:
     name: "{{ item }}"
